@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cek NIK / KTP</title>
+    <title>Cek NIK DPT KPU</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Cek NIK / KTP</h1>
-        <input type="text" id="nik" placeholder="Masukkan NIK" />
-        <button onclick="cekNIK()">Cek</button>
-        <div id="result"></div>
+        <h1>Cek NIK / DPT KPU</h1>
+        <form id="cekForm">
+            <input type="text" id="nik" placeholder="Masukkan NIK" required><br>
+            <input type="text" id="nama" placeholder="Masukkan Nama" required><br>
+            <input type="date" id="tgl_lahir" required><br>
+            <button type="submit">Cek Sekarang</button>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
